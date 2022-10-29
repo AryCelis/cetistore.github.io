@@ -1,0 +1,323 @@
+/* CODIGO DEL CUERPO DE LA PAGINA*/
+html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    margin: 0;  
+    padding: 0;
+    width: 100vw;
+    height: 400vh;
+    background-color: #ffffff;
+}
+/* ---------------------------------- */
+/* TODOS LOS LINKS (a)*/
+a{
+    text-align: none;
+    color: black;
+}
+nav a{
+    text-decoration: none;
+    height: 50px;
+    font-weight: 600;
+    padding-right: 80px;
+}
+nav a:hover{
+    color:white;
+    font-size: 20px;
+}
+/* ---------------------------------- */
+/* Header´s */
+header .Fondo{
+    display: flex;
+    font-family: sans-serif;
+    background: linear-gradient(rgb(91, 36, 122), rgb(27, 206, 223));
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+/* ---------------------------------- */
+/* DIVS */
+
+.padre{
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 90vh;
+}
+.acercade{
+    background-color: rgb(134, 111, 102);
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.acercade h1{
+    color: rgb(19, 69, 231);
+    font-size: 30px;
+    font-family: sans-serif 'Courier New', Courier, monospace;
+}
+.acercade h2{
+    color: rgb(19, 69, 231);
+    font-size: 30px;
+    font-family: sans-serif 'Courier New', Courier, monospace;
+    margin: 0 auto;
+}
+.acercade p{
+    color: black
+}
+.titulo h1, h2,p
+{
+text-align: center;
+}
+.container_seccion{ /* DIV */
+    /*background-color: rgb(0, 0, 0);*/
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.Redes_Sociales{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Redes_Sociales h1{
+    text-align: center;
+    margin: 0 auto;
+}
+.abajo{
+    height: 100vh;
+    background-color: #20b2aa;
+}
+.seccionSobre_Nosotros{ /* DIV HIJO*/
+    background-color: #778899;
+    width: 50%;
+    height: 50%;
+
+}
+.seccionSobre_Nosotros img  /* DIV HIJO*/
+{ 
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 8%;
+    margin-left: 45%;
+
+}
+.seccionSobre_Nosotros div{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.seccionSobre_Nosotros h1   /* DIV HIJO*/
+{ 
+    height: 30px;
+    text-align: center;
+
+}
+
+/* ---------------------------------- */
+
+/* IMG´S */
+#img_log{
+    width:80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Carrito{
+    height: 30px;   
+    width: 30px;
+}
+.Social{
+    height: 50px;
+    width: 150px;
+    display: flex;
+}
+/* ---------------------------------- */
+
+/* ETIQUETAS */
+h2{
+    margin-left: 45%;
+    font-style: oblique;
+}
+
+/* ---------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu{
+    background-color: #1A202C;
+    color: #fff;
+    height: 80px;
+    width: 48.7cm;
+}
+
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu__links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    margin-left: 15cm;
+}
+
+.menu__item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.menu__item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+
+.menu__link{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu__link:hover{
+    background-color: #5e7094;
+}
+
+
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+
+.menu__nesting{
+    list-style: none;
+    transition:clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #000;
+}
+
+.menu__link--inside{
+    padding: 30px 100px 30px 20px;
+}
+
+.menu__link--inside:hover{
+    background-color: #798499;
+}
+
+.menu__hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__img{
+    display: block;
+    width: 36px;
+}
+
+@media (max-width:800px){
+    .menu__hamburguer{
+        display: flex;
+    }
+
+    .menu__item{
+        --clip:0;
+        overflow:hidden ;
+    }
+
+    .menu__item--active{
+        --transform: rotate(0);
+        --background: #5e7094;
+    }
+
+    .menu__item--show{
+        background-color: var(--background);
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .menu__links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+}
+
